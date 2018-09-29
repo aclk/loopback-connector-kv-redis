@@ -4,6 +4,8 @@ const DataSource = require('loopback-datasource-juggler').DataSource;
 const connector = require('../..');
 
 const SETTINGS = {
+  // url: [{host: '127.0.0.1', port: 7000}],
+  // mode: 'cluster',
   host: process.env.REDIS_HOST || 'localhost',
   port: +process.env.REDIS_PORT || undefined,
   connector: connector,
